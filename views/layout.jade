@@ -20,8 +20,6 @@ html
             a(href='#') Start Bootstrap
           li
             a(href='/') Home
-          li
-            a(href='/ping') Ping
           if (!user)
             li
                a(href="/login") Login
@@ -29,7 +27,7 @@ html
                a(href="/register") Register
           if (user)
             li
-              p You are currently logged in as #{user.username}
+              p Hello !  #{user.username}
              li
               a(href="/logout") Logout
           
